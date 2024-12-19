@@ -1,9 +1,10 @@
 import { React, useState } from "react";
 import Snake from "../assets/snake.svg";
 import ProjectLogo from "../assets/shopping.svg";
-import PIlogo from "../assets/pi.svg";
+import PIlogo from "../assets/pi.png";
 import { Link } from "react-router-dom";
 import { motion, useMotionValue } from "framer-motion";
+import MedvetLogo from "../assets/medvetlogo.svg"
 
 const imgs = [
   {
@@ -21,6 +22,11 @@ const imgs = [
     title: "MobiSocial",
     url: "https://mobisocialpi.netlify.app/",
   },
+  {
+    src: MedvetLogo,
+    title: "Medvet",
+    url: "https://www.linkedin.com/in/filipegideao/overlay/1734637072774/single-media-viewer/?profileId=ACoAADQjCEoB1Ou8xBqIwKcKDF0bCHYS_RlZ2b0",
+  },
 ];
 
 const DRAG_BUFFER = 50;
@@ -32,7 +38,7 @@ const Images = () => {
         return (
           <div
             key={index}
-            className="bg-purple-950 w-auto iphone:max-sm:w-[50%] p-4 shrink-0 rounded-xl"
+            className="bg-purple-950 w-auto iphone:max-sm:w-[50%] p-4 shrink-0 rounded-xl h-full flex flex-col items-center justify-between"
           >
             <Link
               to={img.url}
@@ -42,7 +48,7 @@ const Images = () => {
               <img
                 src={img.src}
                 alt="image of project"
-                className="iphone:max-sm:w-14 iphone:max-sm:h-14 w-63 h-63 object-cover "
+                className="iphone:max-sm:w-14 iphone:max-sm:h-14 w-63 h-44 object-contain"
                 draggable="false"
               />
               <div className="h-auto bg-gray-900 w-full rounded-lg text-nowrap">
