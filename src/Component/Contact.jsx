@@ -17,7 +17,7 @@ const Contact = () => {
             <button type='submit' className='iphone:max-sm:w-[50%] w-[20%] h-10 mt-4 bg-[#731DD8] hover:scale-110 self-center  text-white rounded-lg'>Send!</button>
             </div>
             </form>
-            <img src={contactLogo} alt="contact" className='w-40 h-40' />
+            <img src={contactLogo} alt="contact" className='hidden md:block w-40 h-40' />
             </div>
             
         </div>

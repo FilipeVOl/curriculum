@@ -86,9 +86,10 @@ const Projects = () => {
   console.log(dragX.get());
 
   return (
+    <body className="bg-purpley">
     <div
       id="project"
-      className="relative bg-purpley font-bold text-white h-full pt-72 iphone:max-sm:pt-32 overflow-hidden"
+      className="relative bg-purpley font-bold text-white h-auto pt-72 iphone:max-sm:pt-32 overflow-hidden"
     >
       <div className=" flex flex-col gap-8">
         <h1 className="text-5xl text-center">Projects</h1>
@@ -103,12 +104,13 @@ const Projects = () => {
           style={{
             x: dragX,
           }}
-          className="flex items-center iphone:max-sm:overflow-hidden cursor-grab active:cursor-grabbing justify-around"
+          className="flex items-center flex-col md:flex-row gap-4 iphone:max-sm:overflow-hidden cursor-grab active:cursor-grabbing justify-around"
         >
           <Images />
         </motion.div>
       </div>
     </div>
+    </body>
   );
 };
 
