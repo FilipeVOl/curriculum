@@ -35,8 +35,13 @@ const Services = () => {
         <h1 className="text-3xl mb-16">You can see some of the services i offer below.</h1>
         </div>
 
-        <Box sx={{ flexGrow: 1, marginX: 4}}>
-      <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+        <Box sx={{ flexGrow: 1, marginX: 4 }}>
+      <div className='gap-4 md:gap-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3' 
+        container 
+        spacing={{ xs: 2, md: 3 }} 
+        columns={{ xs: 4, sm: 8, md: 12 }} 
+        direction={{ xs: 'column', sm: 'row' }}
+      >
         {services.map((service, index) => (
           <Grid item xs={2} sm={4} md={4} key={index}>
             <div>
@@ -47,7 +52,7 @@ const Services = () => {
             </div>
           </Grid>
         ))}
-      </Grid>
+      </div>
     </Box>
 
     </div>

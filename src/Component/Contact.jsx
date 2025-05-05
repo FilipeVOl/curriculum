@@ -12,7 +12,7 @@ const Contact = () => {
             <input type='hidden' name='access_key' value="a46a66dd-b920-47d8-9da8-1f7928f993a9"/>
             <input type='text' name='name' placeholder='Your name' required className='w-[100%] indent-4 h-10 mt-4 rounded-lg text-black' />
             <input type='email' name='email' placeholder='Your email' required className='w-[100%] indent-4 h-10 mt-4 rounded-lg text-black' />
-            <textarea name='message' placeholder='Your message' required className='w-[100%] indent-4 h-20 mt-4 rounded-lg text-black' />
+            <textarea name='message' placeholder='Your message' required className='w-[100%] indent-4 h-20 py-2 mt-4 rounded-lg text-black' />
             <div className='flex justify-center w-full'>
             <button type='submit' className='iphone:max-sm:w-[50%] w-[20%] h-10 mt-4 bg-[#731DD8] hover:scale-110 self-center  text-white rounded-lg'>Send!</button>
             </div>

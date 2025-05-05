@@ -13,7 +13,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="min-h-16 w-[100vw] md:w-full overflow-scroll md:overflow-hidden bg-purpley grid grid-cols-6 md:grid-cols-[1fr_3fr] items-center px-2 md:px-12">
+    <div className="fixed top-0 z-[999] font-bold rounded-lg min-h-16 w-[100vw] md:w-full overflow-scroll md:overflow-hidden bg-purpley grid grid-cols-6 md:grid-cols-[1fr_3fr] items-center px-2 md:px-12">
       <img
         src={Curriculum}
         alt="curriculum"
@@ -21,20 +21,20 @@ const Navbar = () => {
       />
       <div className="flex flex-row gap-8 justify-between md:justify-around">
         <button onClick={() => scrollToSection('about')} className="text-white space-x-2 col-start-2">
-          <h1 className="text-white space-x-2 col-start-2 text-nowrap">
+          <h1 className="text-white space-x-2 col-start-2 text-nowrap hover:scale-105 transition ease-in-out ">
             About me
           </h1>
         </button>
 
-        <button onClick={() => scrollToSection('services')} className="text-white space-x-2 col-start-2">
+        <button onClick={() => scrollToSection('services')} className="text-white space-x-2 col-start-2 hover:scale-105 transition ease-in-out">
           <h1 className="text-white space-x-2 col-start-2">Services</h1>
         </button>
 
-        <button onClick={() => scrollToSection('project')} className="text-white space-x-2 col-start-2">
+        <button onClick={() => scrollToSection('project')} className="text-white space-x-2 col-start-2 hover:scale-105 transition ease-in-out">
           <h1 className="text-white space-x-2 col-start-2">Projects</h1>
         </button>
 
-        <button onClick={() => scrollToSection('contact')} className="text-white space-x-2 col-start-2">
+        <button onClick={() => scrollToSection('contact')} className="text-white space-x-2 col-start-2 hover:scale-105 transition ease-in-out">
           <h1 className="text-white space-x-2 col-start-2">Contact</h1>
         </button>
       </div>

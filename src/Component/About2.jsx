@@ -33,6 +33,7 @@ const Sliders = ({ value, photoValue, defValue }) => {
           {<img src={photoValue} alt="Javascript logo"/>} {value}
         </h1>
         <Slider
+          step={null}
           aria-label=""
           defaultValue={defValue}
           sx={{ color: "#4433F4" }}
